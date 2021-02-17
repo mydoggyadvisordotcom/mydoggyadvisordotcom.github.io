@@ -1,1 +1,0 @@
-# mydoggyadvisordotcom.github.io
