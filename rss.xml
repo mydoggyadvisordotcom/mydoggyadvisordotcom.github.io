@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>My Doggy Advisor Blog</title>
+        <link>https://www.mydoggyadvisor.com/</link>
+        <description>A personal blog that aims to help dog owners to understand the tons of information available about dogs and summarize them in easy to understand pages.</description>
+        <image>
+            <title>My Doggy Advisor Blog</title>
+            <link>https://www.mydoggyadvisor.com/</link>
+            <url>https://www.mydoggyadvisor.com/assets/images/mydoggyadvisor-logo-128x128.jpg</url>
+            <height>128</height>
+            <width>128</width>
+        </image>
+        <ttl>60</ttl>
+        <pubDate>Sun, 21 Feb 2021 13:01:56 +0000</pubDate>
+        <lastBuildDate>Sat, 27 Feb 2021 13:27:39 +0000</lastBuildDate>
+        <language>en</language>
+        <atom:link href="https://www.mydoggyadvisor.com/rss.xml" rel="self" type="application/rss+xml"/>
+
+        <!-- Posts -->
+        <item>
+            <title>Best Dog Food</title>
+            <link>https://www.mydoggyadvisor.com/feeding/best-dog-food/</link>
+            <guid>https://www.mydoggyadvisor.com/feeding/best-dog-food/</guid>
+            <description>This simple dog food buying guide helps to understand how to choose food for your dog and gives your the my best selections for 11 most popular categories.</description>
+            <category domain="https://www.mydoggyadvisor.com/feeding/">Feeding</category>
+        </item>
+    </channel>
+</rss>
