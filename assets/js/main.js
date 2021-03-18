@@ -14,12 +14,12 @@ L(c,'"'+c.family+'",sans-serif'));A(p,function(a){g=a;v()});u(p,L(c,'"'+c.family
 /** fontfaceobserver-custom */
 if (!sessionStorage.fontsLoaded) {
 
-  var crimsonText400 = new FontFaceObserver('Crimson Text', { weight: 400, style: 'normal' }).load(null, 10000);
-  var crimsonText700 = new FontFaceObserver('Crimson Text', { weight: 700, style: 'normal' }).load(null, 10000);
-  var lora400 = new FontFaceObserver('Lora', { weight: 400, style: 'normal' }).load(null, 10000);
-  var lora700 = new FontFaceObserver('Lora', { weight: 700, style: 'normal' }).load(null, 10000);
+  var inter300 = new FontFaceObserver('Inter', { weight: 300, style: 'normal' }).load(null, 10000);
+  var inter400 = new FontFaceObserver('Inter', { weight: 400, style: 'normal' }).load(null, 10000);
+  var inter600 = new FontFaceObserver('Inter', { weight: 600, style: 'normal' }).load(null, 10000);
+  var inter700 = new FontFaceObserver('Inter', { weight: 700, style: 'normal' }).load(null, 10000);
 
-  Promise.all([crimsonText400, crimsonText700, lora400, lora700]).then(function () {
+  Promise.all([inter300, inter400, inter600, inter700]).then(function () {
     sessionStorage.fontsLoaded = true;
     var html = document.documentElement;
     html.classList.add("fonts-loaded");
