@@ -13,7 +13,7 @@
         </image>
         <ttl>60</ttl>
         <pubDate>Sun, 21 Feb 2021 13:01:56 +0000</pubDate>
-        <lastBuildDate>Thu, 18 Mar 2021 19:32:30 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 19 Mar 2021 20:26:46 +0000</lastBuildDate>
         <language>en</language>
         <atom:link href="https://www.mydoggyadvisor.com/rss.xml" rel="self" type="application/rss+xml"/>
 
@@ -31,6 +31,13 @@
             <guid>https://www.mydoggyadvisor.com/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/</guid>
             <description>The FDA has been studying the effects of grain-free dog foods and their potential link to heart disease. This article summarizes the key points of the study.</description>
             <category domain="https://www.mydoggyadvisor.com/feeding/">Feeding</category>
+        </item>
+        <item>
+            <title>How to Leave Your Dog At Home Alone | My Doggy Advisor</title>
+            <link>https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/</link>
+            <guid>https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/</guid>
+            <description>This short guide will help you learn how to leave your dog at home without having to worry about what you’ll find when you get back.</description>
+            <category domain="https://www.mydoggyadvisor.com/training/">Training</category>
         </item>
     </channel>
 </rss>
