@@ -10,13 +10,8 @@
 
     <meta name="description" content="The FDA has been studying the effects of grain-free dog foods and their potential link to heart disease. This article summarizes the key points of the study.">
 
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
-    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title=" Feed">
-
-    <!-- Facebook meta -->
-<!--    <meta name="fb:app_id" content="2080760518706775">-->
-<!--    <meta name="fb:pages" content="500250503800743">-->
-<!--    <meta name="fb:profile_id" content="500250503800743">-->
+    <link rel="icon" type="image/png" href="https://www.mydoggyadvisor.com/assets/images/favicon_32x32.png">
+    <link rel="alternate" type="application/rss+xml" href="https://www.mydoggyadvisor.com/rss.xml" title=" Feed">
 
     <!-- OpenGraph meta -->
     <meta name="og:description" content="The FDA has been studying the effects of grain-free dog foods and their potential link to heart disease. This article summarizes the key points of the study.">
@@ -29,7 +24,11 @@
     <meta name="og:image:width" content="1200">
 
     <meta name="og:site_name" content="My Doggy Advisor Blog">
+
+    
     <meta name="og:title" content="Grain-Free Dog Food and Dilated Cardiomyopathy | My Doggy Advisor">
+    
+
     <meta name="og:type" content="article">
     <meta name="og:url" content="https://www.mydoggyadvisor.com/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/">
 
@@ -53,6 +52,17 @@ function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
 
 gtag('config', 'G-TYZXFNPXDN');
+
+var linkGtag = function(id, url) {
+  gtag('event', 'click', {
+    'event_category': 'click',
+    'event_label': id,
+    'transport_type': 'beacon',
+    'event_callback': function(){ document.location = url; }
+  });
+}
+</script>
+
 </script>
 
     <!-- Critical CSS -->
@@ -69,34 +79,40 @@ gtag('config', 'G-TYZXFNPXDN');
   font-family: 'Inter';
   font-style: normal;
   font-weight: 300;
-  src: url(/assets/fonts/inter_300.woff2) format('woff2'), url(/assets/fonts/inter_300.ttf) format('truetype');
+  src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_300.woff2) format('woff2'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_300.ttf) format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url(/assets/fonts/inter_400.woff2) format('woff2'), url(/assets/fonts/inter_400.ttf) format('truetype');
+  src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_400.woff2) format('woff2'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_400.ttf) format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 600;
-  src: url(/assets/fonts/inter_600.woff2) format('woff2'), url(/assets/fonts/inter_600.ttf) format('truetype');
+  src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_600.woff2) format('woff2'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_600.ttf) format('truetype');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  src: url(/assets/fonts/inter_700.woff2) format('woff2'), url(/assets/fonts/inter_700.ttf) format('truetype');
+  src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_700.woff2) format('woff2'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_700.ttf) format('truetype');
+  font-display: swap;
 }
 
 
 
   body {
-  font-family: sans serif;
+  font-family: sans-serif;
+  letter-spacing: 0.5px;
 }
 .fonts-loaded body {
-  font-family: "Inter", sans serif;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0px;
 }
 
 h1,
@@ -108,11 +124,21 @@ h4 {
 strong {
   font-weight: 700;
 }
+body {
+  background-color: #ffffff;
+}
 body, a {
   color: #000000;
 }
+
+.full-width-figure figcaption a,
+.simple-img  figcaption a,
 a {
-  text-decoration: underline dotted;
+  text-decoration: underline dotted #007aff;
+}
+.important-span,
+.important-span a {
+  color: #007aff;
 }
 .logo-line {
   color: #007aff;
@@ -134,7 +160,8 @@ a {
     background-color: #ffffff;
     border-bottom: 1px solid #C7DFF3;
 }
-.site-header a {
+.site-header a,
+.site-footer a {
   text-decoration: none;
 }
 .site-header {
@@ -161,7 +188,6 @@ a {
 .full-width-figure figcaption a,
 .simple-img  figcaption a {
   color: #818181;
-  text-decoration: underline dotted #818181;
 }
 .full-width-figure figcaption,
 .simple-img figcaption {
@@ -212,6 +238,8 @@ a {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  font-size: 14px;
+  line-height: 18px;
 }
 .meta .info .published-date
 {
@@ -221,8 +249,8 @@ a {
 }
 .meta .author-photo img {
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
+  height: 48px;
+  width: 48px;
 }
 .meta .author-name {
   font-weight: 600;
@@ -270,6 +298,7 @@ a {
   /*** fonts */
 h1 {
   font-size: 30px;
+  line-height: 36px;
   margin-top: 8px;
 }
 h2, h3, h4 {
@@ -278,26 +307,31 @@ h2, h3, h4 {
 }
 h2 {
   font-size: 26px;
+  line-height: 32px;
 }
 h3 {
   font-size: 22px;
+  line-height: 24px;
 }
 h3 {
   font-size: 18px;
+  line-height: 20px;
 }
 
 /*** site header */
 .site-header {
-  padding: 12px 12px;
-  font-size: 17px;
+  padding: 12px 6px;
+  font-size: 14px;
+  line-height: 16px;
 }
 .site-navigation nav li {
   padding-left: 10px;
+  line-height: 16px;
 }
 
 /*** main content */
 .main-content {
-    padding: 12px 12px;
+    padding: 12px 6px;
 }
 .post-body-outer {
   margin-top: 8px;
@@ -322,7 +356,10 @@ p {
 /*** images */
 .full-width-figure,
 .simple-img {
-  margin: 0 -12px 16px -12px;
+  margin: 0 -6px 16px -6px;
+}
+.featured img {
+  min-height: 230px;
 }
 .full-width-figure img,
 .simple-img img {
@@ -330,8 +367,9 @@ p {
 }
 .full-width-figure figcaption,
 .simple-img figcaption {
-  font-size: 13px;
-  margin: 8px 12px 0 12px;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 4px 12px 0 12px;
 }
 
 /*** post items */
@@ -356,8 +394,8 @@ p {
 
 /*** site footer */
 .site-footer {
-    padding: 32px 12px 32px 12px;
-    font-size: 14px;
+    padding: 32px 6px 12px;
+    font-size: 12px;
 }
   @media (min-width: 800px) {
     /*** main content */
@@ -374,6 +412,7 @@ p {
     /*** fonts */
 h1 {
   font-size: 48px;
+  line-height: 56px;
   margin-top: 20px;
 }
 h2, h3, h4 {
@@ -382,18 +421,26 @@ h2, h3, h4 {
 }
 h2 {
   font-size: 30px;
+  line-height: 35px;
 }
 h3 {
   font-size: 26px;
+  line-height: 28px;
 }
-h3 {
+h4 {
   font-size: 22px;
+  line-height: 25px;
 }
 
 /*** site header */
 .site-header {
   max-width: 824px;
   font-size: 18px;
+  line-height: 21px;
+}
+.site-navigation {
+  font-size: 18px;
+  line-height: 21px;
 }
 .site-navigation nav li {
   padding-left: 16px;
@@ -447,12 +494,12 @@ p {
 .simple-img {
   margin: 32px auto;
 }
-.full-width-figure img {
+.featured img {
   height: 494px;
 }
 .full-width-figure figcaption,
 .simple-img figcaption {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 /*** site footer */
@@ -504,7 +551,7 @@ p {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Doggy Advisor",
-                "item": "https://www.mydoggyadvisor.com/"
+                "item": "https://www.mydoggyadvisor.com"
                 
             },
             
@@ -512,7 +559,7 @@ p {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Feeding",
-                "item": "https://www.mydoggyadvisor.com/feeding/"
+                "item": "https://www.mydoggyadvisor.comfeeding/"
                 
             },
             
@@ -520,8 +567,13 @@ p {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Grain-Free Dog Food and Dilated Cardiomyopathy"
-            }
+            },
             
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "name": "Grain-Free Dog Food and Dilated Cardiomyopathy"
+            }
         ]
     }
 </script>
@@ -579,17 +631,17 @@ p {
 <div class="body-inner">
     <div class="site-header-outer">
     <header class="site-header">
-        <div class="site-logo">
-            <a href="/">
+        <nav class="site-logo">
+            <a href="https://www.mydoggyadvisor.com/">
                 <span style="font-weight: 700">doggy</span><span style="font-weight: 400">advisor</span><span style="font-weight: 700" class="logo-line">|</span>
             </a>
-        </div>
+        </nav>
         <div class="site-navigation">
             <nav>
     <ul>
-        <li><a href="/feeding/"><span>feeding</span></a></li>
-        <li><a href="/training/"><span>training</span></a></li>
-        <li><a href="/about/"><span>about</span></a></li>
+        <li><a href="https://www.mydoggyadvisor.com/feeding/" onclick="linkGtag('navigate_header_to_feeding', 'https://www.mydoggyadvisor.com/feeding/'); return false;"><span>feeding</span></a></li>
+        <li><a href="https://www.mydoggyadvisor.com/training/" onclick="linkGtag('navigate_header_to_training', 'https://www.mydoggyadvisor.com/training/'); return false;"><span>training</span></a></li>
+        <li><a href="https://www.mydoggyadvisor.com/about/" onclick="linkGtag('navigate_header_to_about', 'https://www.mydoggyadvisor.com/about/'); return false;"><span>about</span></a></li>
     </ul>
 </nav>
         </div>
@@ -604,17 +656,17 @@ p {
                     <header class="page-header">
                         <h1>Grain-Free Dog Food and Dilated Cardiomyopathy</h1>
                         
-                        <div class="meta">
+                        <aside class="meta">
                             <div class="author-photo">
-                                <img alt=""
-                                     src="/assets/images/harper_wilson_256x256.jpg"
-                                     srcset="/assets/images/harper_wilson_256x256.jpg 2x">
+                                <img alt="The picture of Harper Wilson"
+                                     src="https://www.mydoggyadvisor.com/assets/images/harper_wilson_64x64.jpg"
+                                     srcset="https://www.mydoggyadvisor.com/assets/images/harper_wilson_128x128.jpg 2x">
                             </div>
                             <div class="info">
                                 <span class="author-name">Harper Wilson</span>
                                 <span class="published-date">Mar 2nd, 2021</span>
                             </div>
-                        </div>
+                        </aside>
                         
                     </header>
                 </div>
@@ -622,31 +674,40 @@ p {
 
                 <!-- POST BODY START -->
                 <div class="post-body-outer">
-                    <section class="post-body">
+                    <div class="post-body">
                         <div class="post-body-inner">
                             <p><strong>Exotic-ingredient and grain-free dog food</strong> recently became very popular among dog owners, however, they <strong>might be linked to serious dog heart disease</strong>, canine dilated cardiomyopathy.</p>
 
 <p>The FDA has been studying the long-term effects of <a href="https://www.fda.gov/animal-veterinary/outbreaks-and-advisories/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy">grain-free dog foods</a> and their potential link to the dilated cardiomyopathy in dogs. This article summarizes the basics of the topic and the key points of this study <strong>every responsible dog owner should know</strong> before making any hasty decisions about their dog's diet.</p>
 
-<figure class="full-width-figure">
+<aside>
+<figure class="full-width-figure  featured">
+  <picture>
+    <source type="image/webp"
+            srcset="
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-800.webp 800w,
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1200.webp 1200w,
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1600.webp 1600w"
 
-  <img src="/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1200.jpg"
-       srcset="
-       /assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-800.jpg 800w,
-       /assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1200.jpg 1200w,
-       /assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1600.jpg 1600w"
+            sizes="
+              (max-width: 800px) 100vw,
+              800px"
+    />
+    <source type="image/jpeg"
+            srcset="
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-800.jpg 800w,
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1200.jpg 1200w,
+              https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-1600.jpg 1600w"
 
-       sizes="
-       (max-width: 400px) 400px,
-       (max-width: 600px) 600px,
-       800px"
-
-       alt="A golden retriever sleeping on the floor"
-  />
-
-  <figcaption><span class="caption">Grain-free dog food recently became very popular, however, they might be linked to serious heart disease </span><span class="copyright">(Photo by <a href='https://unsplash.com/@lukepennystan'>Luke Pennystan</a> on <a href='https://unsplash.com/'>Unsplash</a>)</span></figcaption>
+            sizes="
+              (max-width: 800px) 100vw,
+              800px"
+    />
+    <img src="https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-800.jpg" alt="A golden retriever sleeping on the floor">
+  </picture>
+  <figcaption><span class="copyright">Photo by <a href='https://unsplash.com/@lukepennystan'>Luke Pennystan</a> on <a href='https://unsplash.com/'>Unsplash</a></span></figcaption>
 </figure>
-
+</aside>
 
 <article>
     <h2>What is canine dilated cardiomyopathy?</h2>
@@ -709,7 +770,7 @@ p {
 </section>
 
                         </div>
-                    </section>
+                    </div>
                 </div>
                 <!-- POST BODY END -->
 
@@ -719,18 +780,19 @@ p {
 
         </div>
 
-    <div class="site-footer-outer">
+    <aside class="site-footer-outer">
     <footer class="site-footer">
         <div class="footer-logo">
             <span style="font-weight: 700">doggy</span><span style="font-weight: 400">advisor</span><span style="font-weight: 700" class="logo-line">|</span>
         </div>
         <div class="footer-copyright">
-            <span>Copyright © 2021</span>
+            <span><a href="https://www.mydoggyadvisor.com/sitemap.xml">sitemap</a></span> |
+            <span><a href="mailto:info@mydoggyadvisor.com">email</a></span>
         </div>
     </footer>
-</div>
+</aside>
 
 </div>
-<script defer src="/assets/js/main.js"></script>
+<script defer src="https://www.mydoggyadvisor.com/assets/js/main.js"></script>
 </body>
 </html>
