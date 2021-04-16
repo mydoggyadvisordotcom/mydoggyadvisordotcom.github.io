@@ -211,7 +211,7 @@ a {
 .post-items a {
   text-decoration: none;
 }
-.post-items h3 {
+.post-items h4 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -223,8 +223,12 @@ a {
   text-decoration: none;
 }
 .top-post-item .thumbnail {
-  width: 128px;
-  height: 128px;
+  width: 80px;
+  height: 80px;
+}
+
+.top-post-item.featured-post .title {
+  color: #007aff;
 }
 
 /*** meta */
@@ -434,7 +438,7 @@ h4 {
 
 /*** site header */
 .site-header {
-  max-width: 824px;
+  max-width: 1200px;
   font-size: 18px;
   line-height: 21px;
 }
@@ -450,7 +454,7 @@ h4 {
 .main-content-outer {
   display: flex;
   flex-wrap: wrap;
-  max-width: 824px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .main-content {
@@ -475,16 +479,23 @@ p {
 
 /*** post items */
 .post-items {
-  margin-top: 24px;
+  width: 376px;
+  padding: 24px 12px;
+}
+.post-items h3 {
+  margin-top: 48px;
 }
 .top-post-item {
   padding: 24px 0;
 }
 .top-post-item .description {
-  margin: 0 12px;
+  margin: 0 6px;
 }
 .top-post-item .description h4 {
-  margin: 8px 0;
+  margin: 12px 0;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0;
 }
 
 /*** images */
@@ -504,9 +515,9 @@ p {
 
 /*** site footer */
 .site-footer {
-    padding: 64px 12px 32px 12px;
-    font-size: 14px;
-    max-width: 824px;
+  padding: 64px 12px 32px 12px;
+  font-size: 14px;
+  max-width: 1200px;
 }
   }
 </style>
@@ -605,6 +616,8 @@ p {
             </article>
 
         </main>
+
+        
 
         </div>
 
