@@ -13,7 +13,7 @@
         </image>
         <ttl>60</ttl>
         <pubDate>Sun, 21 Feb 2021 13:01:56 +0000</pubDate>
-        <lastBuildDate>Fri, 16 Apr 2021 21:39:58 +0100</lastBuildDate>
+        <lastBuildDate>Tue, 20 Apr 2021 19:49:26 +0100</lastBuildDate>
         <language>en</language>
         <atom:link href="https://www.mydoggyadvisor.com/rss.xml" rel="self" type="application/rss+xml"/>
 
@@ -40,11 +40,18 @@
             <category domain="https://www.mydoggyadvisor.com/training/">Training</category>
         </item>
         <item>
-            <title>How to Leave Your Dog At Home Alone | My Doggy Advisor</title>
+            <title>How Much Chicken And Rice Should You Feed Your Sick Dog | My Doggy Advisor</title>
             <link>https://www.mydoggyadvisor.com/how-much-chicken-and-rice-should-you-feed-your-sick-dog/</link>
-            <guid>https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/</guid>
-            <description>This short guide will help you learn how to leave your dog at home without having to worry about what you’ll find when you get back.</description>
+            <guid>https://www.mydoggyadvisor.com/how-much-chicken-and-rice-should-you-feed-your-sick-dog/</guid>
+            <description>One of the most recommended ways to help sick dogs recover is to feed them a diet with chicken and rice. But how much chicken and rice for dogs is acceptable?</description>
             <category domain="https://www.mydoggyadvisor.com/feeding/">Feeding</category>
+        </item>
+        <item>
+            <title>Best Interactive Dog Toys | My Doggy Advisor</title>
+            <link>https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/</link>
+            <guid>https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/</guid>
+            <description>Interactive dog toys help your dog to enjoy being alone at home while, and at the same time great for their mental and cognitive development.</description>
+            <category domain="https://www.mydoggyadvisor.com/toys/">Toys</category>
         </item>
     </channel>
 </rss>
