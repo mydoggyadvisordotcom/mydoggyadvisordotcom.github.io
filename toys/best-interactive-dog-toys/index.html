@@ -106,7 +106,10 @@ var linkGtag = function(id, url) {
 
 
 
-  body {
+  html {
+	scroll-behavior: smooth;
+}
+body {
   font-family: sans-serif;
   letter-spacing: 0.5px;
 }
@@ -149,7 +152,7 @@ a {
   list-style-position: outside;
   list-style: none;
 }
-.post-body ul li:before {
+.post-body ul li::before {
   color: #007aff;
   content: "•";
 }
@@ -387,6 +390,9 @@ p {
   margin: 0 12px;
 }
 
+.toc {
+  display: none;
+}
 /*** meta */
 .meta {
   margin-top: 32px;
@@ -417,11 +423,12 @@ p {
 h1 {
   font-size: 48px;
   line-height: 56px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 h2, h3, h4 {
   margin-bottom: 32px;
-  margin-top: 64px;
+  margin-top: 48px;
+  padding-top: 16px;
 }
 h2 {
   font-size: 30px;
@@ -458,7 +465,7 @@ h4 {
   margin: 0 auto;
 }
 .main-content {
-    width: 824px;
+    width: 700px;
     padding: 24px 12px;
 }
 .post-body-outer {
@@ -470,16 +477,59 @@ p {
 .post-body ul {
   margin: 32px;
 }
-.post-body ul li:before {
+.post-body ul li::before {
   margin-right: 16px;
 }
 .post-body ul li {
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 /*** post items */
+.toc {
+  display: unset;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: 250px;
+  padding: 24px 12px;
+}
+.toc li {
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.toc li a {
+  text-decoration: none;
+}
+.toc li.selected {
+  font-weight: bold;
+  border-left: 3px solid #007aff;
+}
+.toc li.h1 {
+  padding-left: 5px;
+}
+.toc li.h1.selected {
+  padding-left: 2px;
+}
+.toc li.h2 {
+  padding-left: 12px;
+}
+.toc li.h2.selected {
+  padding-left: 9px;
+}
+.toc li.h3 {
+  padding-left: 24px;
+}
+.toc li.h3.selected {
+  padding-left: 21px;
+}
 .post-items {
-  width: 376px;
+  width: 250px;
   padding: 24px 12px;
 }
 .post-items h3 {
@@ -655,12 +705,71 @@ p {
 </div>
 
     <div class="main-content-outer">
+
+        
+<nav class="toc">
+    <ul>
+        
+        <li class="h1"><a href="#best-interactive-dog-toys">Best Interactive Dog Toys</a></li>
+        
+        <li class="h2"><a href="#advantages-of-interactive-dog-toys">The Advantages</a></li>
+        
+        <li class="h2"><a href="#why-does-your-dog-need-interactive-dog-toys">Why Does Your Dog Need One?</a></li>
+        
+        <li class="h2"><a href="#types-of-interactive-dog-toys">Types</a></li>
+        
+        <li class="h2"><a href="#how-to-select-the-perfect-interactive-dog-toy">How to Select for Your Dog?</a></li>
+        
+        <li class="h3"><a href="#wickedbone">Wickedbone</a></li>
+        
+        <li class="h3"><a href="#skymee-owl-robot">Skymee Owl Robot</a></li>
+        
+        <li class="h3"><a href="#petgeek-playbone">PetGeek Playbone</a></li>
+        
+    </ul>
+</nav>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
+      if (entry.intersectionRatio > 0) {
+        elements.parentElement.classList.add('selected');
+      } else {
+        elements.parentElement.classList.remove('selected');
+      }
+    });
+  });
+
+  const articles = document.querySelectorAll('article[id]');
+  if(articles) {
+    articles.forEach((section) => { observer.observe(section); });
+  }
+
+  const h1s = document.querySelectorAll('h1[id]');
+  if(h1s) {
+    h1s.forEach((section) => { observer.observe(section); });
+  }
+  const h2s = document.querySelectorAll('h2[id]');
+  if(h2s) {
+    h2s.forEach((section) => { observer.observe(section); });
+  }
+  const h3s = document.querySelectorAll('h3[id]');
+  if(h3s) {
+    h3s.forEach((section) => { observer.observe(section); });
+  }
+});
+</script>
+
+
+
         <main class="main-content">
             <article>
                 <!-- PAGE HEADER START -->
                 <div class="page-header-outer">
                     <header class="page-header">
-                        <h1>Best Interactive Dog Toys</h1>
+                        <h1 id="best-interactive-dog-toys">Best Interactive Dog Toys</h1>
                         
                         <aside class="meta">
                             <div class="author-photo">

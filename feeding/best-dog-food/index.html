@@ -106,7 +106,10 @@ var linkGtag = function(id, url) {
 
 
 
-  body {
+  html {
+	scroll-behavior: smooth;
+}
+body {
   font-family: sans-serif;
   letter-spacing: 0.5px;
 }
@@ -149,7 +152,7 @@ a {
   list-style-position: outside;
   list-style: none;
 }
-.post-body ul li:before {
+.post-body ul li::before {
   color: #007aff;
   content: "•";
 }
@@ -387,6 +390,9 @@ p {
   margin: 0 12px;
 }
 
+.toc {
+  display: none;
+}
 /*** meta */
 .meta {
   margin-top: 32px;
@@ -417,11 +423,12 @@ p {
 h1 {
   font-size: 48px;
   line-height: 56px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 h2, h3, h4 {
   margin-bottom: 32px;
-  margin-top: 64px;
+  margin-top: 48px;
+  padding-top: 16px;
 }
 h2 {
   font-size: 30px;
@@ -458,7 +465,7 @@ h4 {
   margin: 0 auto;
 }
 .main-content {
-    width: 824px;
+    width: 700px;
     padding: 24px 12px;
 }
 .post-body-outer {
@@ -470,16 +477,59 @@ p {
 .post-body ul {
   margin: 32px;
 }
-.post-body ul li:before {
+.post-body ul li::before {
   margin-right: 16px;
 }
 .post-body ul li {
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 16px;
 }
 
 /*** post items */
+.toc {
+  display: unset;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  width: 250px;
+  padding: 24px 12px;
+}
+.toc li {
+  font-size: 14px;
+  line-height: 26px;
+  list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.toc li a {
+  text-decoration: none;
+}
+.toc li.selected {
+  font-weight: bold;
+  border-left: 3px solid #007aff;
+}
+.toc li.h1 {
+  padding-left: 5px;
+}
+.toc li.h1.selected {
+  padding-left: 2px;
+}
+.toc li.h2 {
+  padding-left: 12px;
+}
+.toc li.h2.selected {
+  padding-left: 9px;
+}
+.toc li.h3 {
+  padding-left: 24px;
+}
+.toc li.h3.selected {
+  padding-left: 21px;
+}
 .post-items {
-  width: 376px;
+  width: 250px;
   padding: 24px 12px;
 }
 .post-items h3 {
@@ -766,12 +816,111 @@ p {
 </div>
 
     <div class="main-content-outer">
+
+        
+<nav class="toc">
+    <ul>
+        
+        <li class="h1"><a href="#best-dog-food">Best Dog Food</a></li>
+        
+        <li class="h2"><a href="#does-it-really-matter-what-dog-food">Does dog food matter?</a></li>
+        
+        <li class="h2"><a href="#what-to-look-for-in-dog-food">What to look for in dog food?</a></li>
+        
+        <li class="h2"><a href="#how-do-i-know-what-dog-food-is-best-for-my-dog">How do I know what dog food is best for my dog?</a></li>
+        
+        <li class="h3"><a href="#is-puppy-dog-food-necessary">Is puppy dog food necessary?</a></li>
+        
+        <li class="h3"><a href="#what-is-better-dry-or-wet-dog-food">What is better dry or wet dog food?</a></li>
+        
+        <li class="h3"><a href="#is-grain-free-dog-food-better">Is grain-free dog food better?</a></li>
+        
+        <li class="h3"><a href="#how-is-senior-dog-food-different">How is senior dog food different?</a></li>
+        
+        <li class="h3"><a href="#what-do-you-feed-a-dog-with-food-allergies">What do you feed a dog with food allergies?</a></li>
+        
+        <li class="h3"><a href="#what-food-is-easy-on-a-dogs-stomach">What food is easy on a dog's stomach?</a></li>
+        
+        <li class="h3"><a href="#do-small-dogs-need-small-dog-food">Do small dogs need small dog food?</a></li>
+        
+        <li class="h3"><a href="#what-is-different-about-large-breed-dog-food">What is different about large breed dog food?</a></li>
+        
+        <li class="h3"><a href="#what-is-the-cheapest-but-best-dog-food">What is the cheapest but best dog food?</a></li>
+        
+        <li class="h3"><a href="#is-organic-dog-food-better">Is organic dog food better?</a></li>
+        
+        <li class="h2"><a href="#top-dog-food-by-category">Top dog food by category</a></li>
+        
+        <li class="h3"><a href="#top-dog-food-by-category">Top dog food by category</a></li>
+        
+        <li class="h3"><a href="#best-overall">Best Overall</a></li>
+        
+        <li class="h3"><a href="#best-for-puppy">Best for Puppy</a></li>
+        
+        <li class="h3"><a href="#best-dry">Best Dry</a></li>
+        
+        <li class="h3"><a href="#best-wet">Best Wet</a></li>
+        
+        <li class="h3"><a href="#best-grain-free">Best Grain Free</a></li>
+        
+        <li class="h3"><a href="#best-for-senior-dog">Best for Senior Dog</a></li>
+        
+        <li class="h3"><a href="#best-for-allergies">Best for Allergies</a></li>
+        
+        <li class="h3"><a href="#best-for-sensitive-stomach">Best for Sensitive Stomach</a></li>
+        
+        <li class="h3"><a href="#best-for-small-dogs">Best for Small Dogs</a></li>
+        
+        <li class="h3"><a href="#best-for-large-dogs">Best for Large Dogs</a></li>
+        
+        <li class="h3"><a href="#best-with-grain">Best with Grain</a></li>
+        
+        <li class="h3"><a href="#best-cheap">Best Cheap</a></li>
+        
+    </ul>
+</nav>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.getAttribute('id');
+      const elements = document.querySelector(`nav ul li a[href="#${id}"]`);
+      if (entry.intersectionRatio > 0) {
+        elements.parentElement.classList.add('selected');
+      } else {
+        elements.parentElement.classList.remove('selected');
+      }
+    });
+  });
+
+  const articles = document.querySelectorAll('article[id]');
+  if(articles) {
+    articles.forEach((section) => { observer.observe(section); });
+  }
+
+  const h1s = document.querySelectorAll('h1[id]');
+  if(h1s) {
+    h1s.forEach((section) => { observer.observe(section); });
+  }
+  const h2s = document.querySelectorAll('h2[id]');
+  if(h2s) {
+    h2s.forEach((section) => { observer.observe(section); });
+  }
+  const h3s = document.querySelectorAll('h3[id]');
+  if(h3s) {
+    h3s.forEach((section) => { observer.observe(section); });
+  }
+});
+</script>
+
+
+
         <main class="main-content">
             <article>
                 <!-- PAGE HEADER START -->
                 <div class="page-header-outer">
                     <header class="page-header">
-                        <h1>Best Dog Food</h1>
+                        <h1 id="best-dog-food">Best Dog Food</h1>
                         
                         <aside class="meta">
                             <div class="author-photo">
@@ -844,7 +993,7 @@ p {
 </ul>
 
 <article>
-    <h2>Does it really matter what dog food?</h2>
+    <h2 id="does-it-really-matter-what-dog-food">Does it really matter what dog food?</h2>
     <p>It may seem like dog food is just, well, dog food. <strong>They are not all the same and not created for the same type of dogs.</strong> The quality of animal food products varies greatly from one brand to another; some brands have stronger advertisements and some are hardly known for most dog owners. It can be quite hard to determine what the best type of dog food is for your furry friend.</p>
     <p>There are many high-quality dog food options available on the market, but there are also those that cut corners by bulking up their products with cheap unhealthy fillers and artificial additives. These foods are not regulated in the same way as human foods are, so <strong>if you want to find a healthy and quality product, you'll have to do some digging.</strong></p>
     <p>The quality of <strong>your dog's diet is directly related to its health</strong>, so you need to do your research to find what’s best for your dog. Since every dog is unique, <strong>you need to understand your dog's nutritional requirements</strong> and have some knowledge of how to read a pet food label.</p>
@@ -853,7 +1002,7 @@ p {
     </div>
 </article>
 
-<article>
+<article id="what-to-look-for-in-dog-food">
     <h2>What to look for in dog food?</h2>
     <p>First, you should <strong>read the ingredient list</strong> just as you’d do with human food. This gives you an idea of the general composition and focus of the dog food. The list typically contains a lot of ingredients and the <strong>first three to five are the most critical</strong> to understand the basic composition of the product. This will help you determine if the formula is vegetable-based with products like corn and rice or meat-based with chicken, fish, or lamb. <strong>While each dog is different, they generally do best on a protein-rich, meat-based diet.</strong></p>
     <p>Next, analyze what type of meat is within. <strong>Look for brands that specifically name the type of meat product</strong>. The label should say specifically, beef, chicken, or lamb. Dog foods stating only meat, bone meal, or meat by-products could come from any animal; similarly, “poultry meal” signals any kind of bird.</p>
@@ -864,72 +1013,72 @@ p {
     </div>
 </article>
 
-<article>
+<article id="how-do-i-know-what-dog-food-is-best-for-my-dog">
     <h2>How do I know what dog food is best for my dog?</h2>
     <p><strong>The field of dog food is immensely wide</strong> and so are your options. You have food for puppies and senior dogs, dry food and wet food, grain-free food, food for small dogs, food for large dogs, dog food for allergies, and dog food for sensitive stomachs.</p>
     <p>This short guide hopefully helps you to <strong>understand why certain dogs need different food</strong> and how to make it easier to navigate through these options to find the best dog food for your pet.</p>
+
+    <article id="is-puppy-dog-food-necessary">
+        <h3>Is puppy dog food necessary?</h3>
+        <p>Puppies are at the age when they develop their bone structure. Therefore, <strong>choosing the best food for your puppy is one of the most important decisions</strong> you can make. Adult dog food contains too much calcium which negatively influences the bone development of the growing puppy and <a href="https://www.ncbi.nlm.nih.gov/pubmed/1604770">it can lead to developing hip and elbow dysplasia</a>.</p>
+    </article>
+
+    <article id="what-is-better-dry-or-wet-dog-food">
+        <h3>What is better dry or wet dog food?</h3>
+        <p><strong>Dry dog food</strong> (or kibble) is typically <strong>a better investment</strong>, as you get more nutrition and less water compare to wet or canned dog food. One other benefit of dry food is that the friction of <strong>chewing it can help keep your dog’s teeth and gums healthy</strong>.</p>
+        <p>However, you can use your imagination. <strong>If you go with dry food, try topping</strong> it with a bit of canned food, some remaining food from home, or other toppers.</p>
+    </article>
+
+    <article id="is-grain-free-dog-food-better">
+        <h3>Is grain-free dog food better?</h3>
+        <p>In general, the best <strong>grain-free dog foods contain more protein</strong> than their competitors because the grain is replaced by potatoes and legumes that are rich in protein. <strong>However</strong>, plant protein <strong>can be deficient in certain essential amino acids</strong> and they can upset the delicate amino acid balance of the food.</p>
+        <div class="important-box">
+            <p><strong>Important alert</strong>: There’s recently been worry over grain-free dog food: the FDA is investigating <a href="https://www.fda.gov/animal-veterinary/news-events/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy">a potential link between grain-free diet and heart disease</a> in dogs. Due to this, many dog owners are looking for dog foods that contain grain.</p>
+        </div>
+    </article>
+
+    <article id="how-is-senior-dog-food-different">
+        <h3>How is senior dog food different?</h3>
+        <p><strong>An older dog needs more protein in its diet than a younger one</strong>. That’s because seniors need to replace wasting muscle mass as they age. However, if your older dog is healthy and eating a quality, protein-rich, balanced diet, there’s no real reason to switch to a senior dog food.</p>
+        <div class="important-box">
+            <p>A dog food rich in meat-based protein will not strain a healthy, older dog’s kidneys. However, <strong>if your dog has already been diagnosed with kidney disease, be sure to ask your vet</strong> about prescribing an appropriate diet.</p>
+        </div>
+    </article>
+
+    <article id="what-do-you-feed-a-dog-with-food-allergies">
+        <h3>What do you feed a dog with food allergies?</h3>
+        <p><strong>There are foods designed with fewer ingredients</strong> so they can help to pin down the specific ingredient to which your dog may be allergic.</p>
+        <p><strong>In more serious cases veterinarians can prescribe hypoallergenic dog foods</strong>. These are usually made to help your dog ingest the food, so they’re less likely to experience an allergic reaction.</p>
+    </article>
+
+    <article>
+        <h3 id="what-food-is-easy-on-a-dogs-stomach">What food is easy on a dog's stomach?</h3>
+        <p>Some digestive problems can be controlled with a simple change in diet, others can be caused by something more serious. <strong>Gastrointestinal dog foods are special-purpose diets made for dogs suffering from digestive problems</strong>. It’s like limited ingredient food and they also include ingredients specifically designed to support digestion.</p>
+    </article>
+
+    <article id="do-small-dogs-need-small-dog-food">
+        <h3>Do small dogs need small dog food?</h3>
+        <p>The best small breed dog foods are designed to provide balanced nutrition for dogs whose ideal adult weight is under 20 pounds. That’s because <strong>small dogs</strong> tend to <strong>benefit from food optimized for their higher rate of metabolism</strong> and their smaller physical size.</p>
+        <p>However, a recent study found that <strong><a href="https://afbinternational.com/wp-content/uploads/downloads/206/small_dogs_large_kibble_8_10.pdf">every size dog preferred large kibble over small</a></strong> or medium-sized pieces, so you don’t need to restrict your dog food selection to small kibble sizes.</p>
+    </article>
+
+    <article id="what-is-different-about-large-breed-dog-food">
+        <h3>What is different about large breed dog food?</h3>
+        <p>Choosing the best large breed dog food can make an enormous difference in the health of your dog, especially puppies. <strong>Dog foods</strong> designed <strong>for large dogs focus on bone development that’s necessary to support their weight</strong>. Feeding your dog with the  <a href="https://www.ncbi.nlm.nih.gov/pubmed/1604770">wrong type of food could lead to permanent bone damage</a>, including a crippling form of hip dysplasia.</p>
+    </article>
+
+    <article id="what-is-the-cheapest-but-best-dog-food">
+        <h3>What is the cheapest but best dog food?</h3>
+        <p>It’s generally not a good idea to go for the cheapest dog food, but <strong>with research and a lot of experiments, it’s possible to find a good dog food that’s 30% cheaper</strong> than the expensive alternative.</p>
+    </article>
+
+    <article id="is-organic-dog-food-better">
+        <h3>Is organic dog food better?</h3>
+        <p>With the <strong>USDA organic label</strong>, your <a href="https://www.ams.usda.gov/rules-regulations/organic/labeling">dog food is certified</a> to be free of antibiotics, synthetic hormones, toxic pesticides, and preservatives. Per the certification, <strong>its ingredients can’t be genetically engineered, grown in chemical fertilizer, or irradiated</strong>.</p>
+    </article>
 </article>
 
-<article>
-    <h3>Is puppy dog food necessary?</h3>
-    <p>Puppies are at the age when they develop their bone structure. Therefore, <strong>choosing the best food for your puppy is one of the most important decisions</strong> you can make. Adult dog food contains too much calcium which negatively influences the bone development of the growing puppy and <a href="https://www.ncbi.nlm.nih.gov/pubmed/1604770">it can lead to developing hip and elbow dysplasia</a>.</p>
-</article>
-
-<article>
-    <h3>What is better dry or wet dog food?</h3>
-    <p><strong>Dry dog food</strong> (or kibble) is typically <strong>a better investment</strong>, as you get more nutrition and less water compare to wet or canned dog food. One other benefit of dry food is that the friction of <strong>chewing it can help keep your dog’s teeth and gums healthy</strong>.</p>
-    <p>However, you can use your imagination. <strong>If you go with dry food, try topping</strong> it with a bit of canned food, some remaining food from home, or other toppers.</p>
-</article>
-
-<article>
-    <h3>Is grain-free dog food better?</h3>
-    <p>In general, the best <strong>grain-free dog foods contain more protein</strong> than their competitors because the grain is replaced by potatoes and legumes that are rich in protein. <strong>However</strong>, plant protein <strong>can be deficient in certain essential amino acids</strong> and they can upset the delicate amino acid balance of the food.</p>
-    <div class="important-box">
-        <p><strong>Important alert</strong>: There’s recently been worry over grain-free dog food: the FDA is investigating <a href="https://www.fda.gov/animal-veterinary/news-events/fda-investigation-potential-link-between-certain-diets-and-canine-dilated-cardiomyopathy">a potential link between grain-free diet and heart disease</a> in dogs. Due to this, many dog owners are looking for dog foods that contain grain.</p>
-    </div>
-</article>
-
-<article>
-    <h3>How is senior dog food different?</h3>
-    <p><strong>An older dog needs more protein in its diet than a younger one</strong>. That’s because seniors need to replace wasting muscle mass as they age. However, if your older dog is healthy and eating a quality, protein-rich, balanced diet, there’s no real reason to switch to a senior dog food.</p>
-    <div class="important-box">
-        <p>A dog food rich in meat-based protein will not strain a healthy, older dog’s kidneys. However, <strong>if your dog has already been diagnosed with kidney disease, be sure to ask your vet</strong> about prescribing an appropriate diet.</p>
-    </div>
-</article>
-
-<article>
-    <h3>What do you feed a dog with food allergies?</h3>
-    <p><strong>There are foods designed with fewer ingredients</strong> so they can help to pin down the specific ingredient to which your dog may be allergic.</p>
-    <p><strong>In more serious cases veterinarians can prescribe hypoallergenic dog foods</strong>. These are usually made to help your dog ingest the food, so they’re less likely to experience an allergic reaction.</p>
-</article>
-
-<article>
-    <h3>What food is easy on a dog's stomach?</h3>
-    <p>Some digestive problems can be controlled with a simple change in diet, others can be caused by something more serious. <strong>Gastrointestinal dog foods are special-purpose diets made for dogs suffering from digestive problems</strong>. It’s like limited ingredient food and they also include ingredients specifically designed to support digestion.</p>
-</article>
-
-<article>
-    <h3>Do small dogs need small dog food?</h3>
-    <p>The best small breed dog foods are designed to provide balanced nutrition for dogs whose ideal adult weight is under 20 pounds. That’s because <strong>small dogs</strong> tend to <strong>benefit from food optimized for their higher rate of metabolism</strong> and their smaller physical size.</p>
-    <p>However, a recent study found that <strong><a href="https://afbinternational.com/wp-content/uploads/downloads/206/small_dogs_large_kibble_8_10.pdf">every size dog preferred large kibble over small</a></strong> or medium-sized pieces, so you don’t need to restrict your dog food selection to small kibble sizes.</p>
-</article>
-
-<article>
-    <h3>What is different about large breed dog food?</h3>
-    <p>Choosing the best large breed dog food can make an enormous difference in the health of your dog, especially puppies. <strong>Dog foods</strong> designed <strong>for large dogs focus on bone development that’s necessary to support their weight</strong>. Feeding your dog with the  <a href="https://www.ncbi.nlm.nih.gov/pubmed/1604770">wrong type of food could lead to permanent bone damage</a>, including a crippling form of hip dysplasia.</p>
-</article>
-
-<article>
-    <h3>What is the cheapest but best dog food?</h3>
-    <p>It’s generally not a good idea to go for the cheapest dog food, but <strong>with research and a lot of experiments, it’s possible to find a good dog food that’s 30% cheaper</strong> than the expensive alternative.</p>
-</article>
-
-<article>
-    <h3>Is organic dog food better?</h3>
-    <p>With the <strong>USDA organic label</strong>, your <a href="https://www.ams.usda.gov/rules-regulations/organic/labeling">dog food is certified</a> to be free of antibiotics, synthetic hormones, toxic pesticides, and preservatives. Per the certification, <strong>its ingredients can’t be genetically engineered, grown in chemical fertilizer, or irradiated</strong>.</p>
-</article>
-
-<article>
+<article id="top-dog-food-by-category">
     <h2>Top dog food by category</h2>
 
     <article id="best-overall">
