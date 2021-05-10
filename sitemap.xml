@@ -3,57 +3,62 @@
     <!-- todo: check sitemap-images -->
     <url>
         <loc>https://www.mydoggyadvisor.com/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/about/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/feeding/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/training/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/toys/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/feeding/best-dog-food/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://www.mydoggyadvisor.com/training/how-to-socialize-dogs/</loc>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
     <url>
         <loc>https://www.mydoggyadvisor.com/toys/best-puzzle-dog-toys/</loc>
-        <lastmod>2021-05-04</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2021-05-10</lastmod>
+        <changefreq>daily</changefreq>
     </url>
 </urlset>
