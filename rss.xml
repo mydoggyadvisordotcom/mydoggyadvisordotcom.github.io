@@ -13,7 +13,7 @@
         </image>
         <ttl>60</ttl>
         <pubDate>Sun, 21 Feb 2021 13:01:56 +0000</pubDate>
-        <lastBuildDate>Thu, 13 May 2021 20:18:38 +0100</lastBuildDate>
+        <lastBuildDate>Thu, 03 Jun 2021 21:02:44 +0100</lastBuildDate>
         <language>en</language>
         <atom:link href="https://www.mydoggyadvisor.com/rss.xml" rel="self" type="application/rss+xml"/>
 
@@ -52,6 +52,13 @@
             <guid>https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/</guid>
             <description>Interactive dog toys help your dog to enjoy being alone at home while, and at the same time great for their mental and cognitive development.</description>
             <category domain="https://www.mydoggyadvisor.com/toys/">Toys</category>
+        </item>
+        <item>
+            <title>10 Ways to Keep Your Puppy Cool in Summer | My Doggy Advisor</title>
+            <link>https://www.mydoggyadvisor.com/training/10-ways-to-keep-your-puppy-cool-in-summer/</link>
+            <guid>https://www.mydoggyadvisor.com/training/10-ways-to-keep-your-puppy-cool-in-summer/</guid>
+            <description>Summer presents the perfect weather to head to the beach and enjoy outdoors with your puppy. This article offers few tips to make it safer for your dog.</description>
+            <category domain="https://www.mydoggyadvisor.com/training/">Toys</category>
         </item>
     </channel>
 </rss>
