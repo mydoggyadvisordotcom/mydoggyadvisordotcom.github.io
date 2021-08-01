@@ -7,7 +7,7 @@
         <title>9 Milestones Before Your Puppy's First Birthday | My Doggy Advisor</title>
         <meta
         name="description" content="Your puppy is fast developing and learning in the first year. This guide will help you to set goals for you as an owner and for your dog for that period.">
-            <link rel="icon" type="image/png" href="https://www.mydoggyadvisor.com/assets/images/favicon_32x32.png">
+            <link rel="icon" type="image/png" href="https://www.mydoggyadvisor.com/assets/images/favicon.png">
             <link rel="canonical" href="https://www.mydoggyadvisor.com/training/9-milestones-before-your-puppys-first-birthday/"
             />
             <link rel="alternate" type="application/rss+xml" href="https://www.mydoggyadvisor.com/rss.xml"
@@ -67,19 +67,12 @@
                 @font-face {
                   font-family: 'Inter';
                   font-style: normal;
-                  font-weight: 600;
-                  src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_600.woff) format('woff'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_600.ttf) format('truetype');
-                  font-display: swap;
-                }
-                @font-face {
-                  font-family: 'Inter';
-                  font-style: normal;
                   font-weight: 700;
                   src: url(https://www.mydoggyadvisor.com/assets/fonts/inter_700.woff) format('woff'), url(https://www.mydoggyadvisor.com/assets/fonts/inter_700.ttf) format('truetype');
                   font-display: swap;
                 }
                   html {
-                	scroll-behavior: smooth;
+                  scroll-behavior: smooth;
                 }
                 body {
                   font-family: sans-serif;
@@ -89,65 +82,48 @@
                   font-family: "Inter", sans-serif;
                   letter-spacing: 0px;
                 }
-                
                 h1,
                 h2,
                 h3,
-                h4 {
-                  font-weight: 700;
-                }
-                strong {
+                h4,
+                strong,
+                .site-navigation {
                   font-weight: 700;
                 }
                 body {
+                  color: #000000;
                   background-color: #ffffff;
                 }
-                body, a {
-                  color: #000000;
-                }
-                
-                .full-width-figure figcaption a,
-                .simple-img  figcaption a,
                 a {
-                  text-decoration: underline dotted #007aff;
+                  color: #000000;
+                  text-decoration: underline dashed #007aff;
                 }
+                /*** generic custom stuff */
+                .logo-line,
                 .important-span,
                 .important-span a {
                   color: #007aff;
                 }
-                .logo-line {
-                  color: #007aff;
-                }
-                
-                /*** main content */
-                .post-body ul {
-                  list-style-position: outside;
-                  list-style: none;
-                }
-                .post-body ul li::before {
-                  color: #007aff;
-                  content: "•";
-                }
-                .post-body ul li {
-                }
-                /*** site header */
+                /*** site-header / footer*/
                 .site-header-outer {
-                    background-color: #ffffff;
-                    border-bottom: 1px solid #C7DFF3;
+                  border-bottom: 1px solid #C7DFF3;
+                }
+                .site-footer-outer {
+                    border-top: 1px solid #C7DFF3;
+                    background-color: #f8f9fa;
+                }
+                .site-header,
+                .site-footer {
+                  width: 100%;
+                  margin: 0 auto;
+                  display: flex;
+                  position: relative;
+                  justify-content: space-between;
+                  align-items: center;
                 }
                 .site-header a,
                 .site-footer a {
                   text-decoration: none;
-                }
-                .site-header {
-                    max-width: 1200px;
-                    margin: 0 auto;
-                    display: flex;
-                    position: relative;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .site-navigation {
                 }
                 .site-navigation nav ul {
                   list-style: none;
@@ -158,28 +134,16 @@
                 .full-width-figure img,
                 .simple-img img {
                   width: 100%;
-                  background-color: #f8f9fa;
+                  height: 61.75vw;
                 }
                 .full-width-figure figcaption a,
-                .simple-img  figcaption a {
+                .simple-img figcaption a {
                   color: #818181;
                 }
-                .full-width-figure figcaption,
-                .simple-img figcaption {
+                figcaption {
                   text-align: center;
-                  margin-top: 4px;
                   font-weight: 300;
                   color: #818181;
-                }
-                .simple-img {
-                  max-width: 600px;
-                  margin: 0 auto;
-                }
-                .simple-img-container {
-                }
-                .simple-img img {
-                  width: 100%;
-                  background-color: #f8f9fa;
                 }
                 
                 /*** post items */
@@ -192,17 +156,25 @@
                 }
                 .top-post-item {
                   display: flex;
-                  border-bottom: 1px solid #C7DFF3;
+                }
+                .post-item-outer {
+                  border-bottom: 1px dotted #C7DFF3;
                 }
                 .post-item-link {
                   text-decoration: none;
                 }
+                
                 .top-post-item .thumbnail {
                   width: 80px;
                   height: 80px;
+                  opacity: 0.85;
                 }
                 
-                .top-post-item.featured-post .title {
+                .top-post-item .thumbnail:hover {
+                  opacity: 1.0;
+                }
+                
+                .top-post-item.featured-post .category {
                   color: #007aff;
                 }
                 
@@ -232,26 +204,7 @@
                   width: 48px;
                 }
                 .meta .author-name {
-                  font-weight: 600;
-                }
-                
-                /*** site footer */
-                .site-footer-outer {
-                    border-top: 1px solid #C7DFF3;
-                    background-color: #f8f9fa;
-                }
-                .site-footer {
-                    max-width: 1200px;
-                
-                    margin: 0 auto;
-                    display: flex;
-                    position: relative;
-                    justify-content: space-between;
-                    align-items: center;
-                }
-                .footer-logo {
-                }
-                .footer-copyright {
+                  font-weight: 700;
                 }
                 
                 .important-box p:last-child,
@@ -260,32 +213,36 @@
                     margin-bottom: 0;
                 }
                 
+                /*** main content */
+                /*** main / list */
+                .post-body ul {
+                  list-style-position: outside;
+                  list-style: none;
+                }
+                .post-body ul li::before {
+                  color: #007aff;
+                  content: "•";
+                }
+                /*** Main / Special contexts */
                 .important-box {
                     background-color: #F1F7FC;
-                    border-left: 6px solid #007aff;
-                    padding: 16px;
-                    margin-bottom: 32px;
                 }
-                
                 .light-box {
-                    background-color: #f8f9fa;
+                    background-color: #F8F9FA;
+                }
+                .important-box,
+                .light-box {
                     border-left: 6px solid #007aff;
-                    padding: 16px;
-                    margin-bottom: 32px;
                 }
                 
                   /*** fonts */
                 h1 {
-                  font-size: 30px;
-                  line-height: 36px;
-                }
-                h2, h3, h4 {
-                  margin-bottom: 22px;
-                  margin-top: 44px;
+                  font-size: 28px;
+                  line-height: 32px;
                 }
                 h2 {
-                  font-size: 26px;
-                  line-height: 32px;
+                  font-size: 25px;
+                  line-height: 30px;
                 }
                 h3 {
                   font-size: 22px;
@@ -295,18 +252,31 @@
                   font-size: 18px;
                   line-height: 20px;
                 }
-                
+                h1 {
+                  margin-bottom: 22px;
+                  margin-top: 11px;
+                }
+                h2, h3, h4 {
+                  margin-bottom: 22px;
+                  margin-top: 44px;
+                }
                 /*** site header */
                 .site-header {
                   padding: 12px 6px;
-                  font-size: 14px;
-                  line-height: 16px;
+                  font-size: 15px;
+                  line-height: 17px;
                 }
                 .site-navigation nav li {
                   padding-left: 10px;
-                  line-height: 16px;
                 }
-                
+                /*** site footer */
+                .site-footer {
+                  padding: 32px 6px 12px;
+                  font-size: 12px;
+                }
+                figcaption {
+                  margin-top: 4px;
+                }
                 /*** main content */
                 .main-content {
                     padding: 12px 6px;
@@ -350,8 +320,103 @@
                   margin: 4px 12px 0 12px;
                 }
                 
-                /*** post items */
-                .post-items {
+                /*** TOC */
+                .toc {
+                  display: none;
+                }
+                
+                /*** other post items */
+                .index-post-item:hover {
+                  background-color: #FAFAFA;
+                }
+                .index-post-item:hover .thumbnail{
+                  opacity: 1;
+                }
+                .index-post-item-link {
+                  text-decoration: none;
+                }
+                .index-post-item {
+                  display: flex;
+                  flex-flow: column;
+                  margin: 24px -6px;
+                  border-bottom: 1px solid #C7DFF3;
+                  border-top:    1px solid #C7DFF3;
+                }
+                .index-post-item .thumbnail {
+                  width: 100%;
+                  height: 120px;
+                  object-fit: cover;
+                  flex-shrink: 0;
+                }
+                
+                /** fixme this should be generic */
+                .index-post-item .thumbnail img{
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                }
+                .index-post-item .meta {
+                  padding: 12px;
+                  margin: 0;
+                  flex-wrap: wrap;
+                  justify-content: none;
+                }
+                .index-post-item .meta .category{
+                  width: 100%;
+                  font-size: 13px;
+                  line-height: 16px;
+                  margin: 0 0 8px 0;
+                  color: #007aff;
+                  text-transform: uppercase;
+                }
+                
+                .index-post-item .meta .title {
+                  width: 100%;
+                  font-size: 17px;
+                  line-height: 20px;
+                  margin: 0 0 8px 0;
+                }
+                
+                .index-post-item .meta .excerpt {
+                  width: 100%;
+                  font-size: 15px;
+                  line-height: 20px;
+                  max-height: 80px;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: inline-block;
+                  margin: 0 0 8px 0;
+                }
+                
+                .index-post-item .meta .bs {
+                  width: 100%;
+                  height: 44px;
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  margin: 0;
+                }
+                
+                .index-post-item .meta .bs .author-photo {
+                  height: 40px;
+                  width: 40px;
+                }
+                
+                .index-post-item .meta .bs .author-photo img {
+                  height: 40px;
+                  width: 40px;
+                  border-radius: 50%;
+                }
+                
+                .index-post-item .meta .bs .info {
+                    display: flex;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                }
+                
+                /*** top post items */
+                .other-post-items {
+                  display: none;
                   padding: 32px 12px;
                 }
                 .top-post-item {
@@ -359,10 +424,6 @@
                 }
                 .top-post-item .description {
                   margin: 0 12px;
-                }
-                
-                .toc {
-                  display: none;
                 }
                 /*** meta */
                 .meta {
@@ -373,11 +434,35 @@
                   margin-left: 12px;
                 }
                 
-                /*** site footer */
-                .site-footer {
-                    padding: 32px 6px 12px;
-                    font-size: 12px;
+                /*** Main / Special contexts */
+                .important-box {
+                    padding: 16px;
+                    margin-bottom: 32px;
                 }
+                .light-box {
+                    padding: 16px;
+                    margin-bottom: 32px;
+                }
+                  @media (min-width: 600px) {
+                    /*** other post items */
+                .index-post-item {
+                  flex-flow: row;
+                }
+                .index-post-item .thumbnail {
+                  width: 327px;
+                  height: 202px;
+                  opacity: .85;
+                  object-fit: unset;
+                }
+                .index-post-item .meta .title {
+                  height: 40px;
+                }
+                
+                .index-post-item .meta .excerpt {
+                  line-height: 18px;
+                  height: 54px;
+                }
+                  }
                   @media (min-width: 800px) {
                     /*** main content */
                 /*** images */
@@ -387,6 +472,10 @@
                 .main-content-outer, .site-header, .site-footer {
                   margin: 0 auto;
                   max-width: 824px;
+                }
+                .index-post-item {
+                  margin: 24px 0px;
+                  border: 1px solid #C7DFF3;
                 }
                   }
                   @media (min-width: 1280px) {
@@ -412,7 +501,7 @@
                   line-height: 28px;
                 }
                 p {
-                  font-size: 20px;
+                  font-size: 18px;
                   line-height: 32px;
                   margin-top: 32px;
                   margin-bottom: 32px;
@@ -512,9 +601,16 @@
                 .toc li.h3.selected {
                   padding-left: 24px;
                 }
+                
+                /*** post items */
                 .post-items {
+                  display: unset;
                   width: 330px;
                   padding: 12px;
+                  padding-left: 24px;
+                }
+                .top-post-item {
+                  padding: 0;
                 }
                 .post-items h3 {
                   font-size: 14px;
@@ -522,25 +618,32 @@
                   color: #333333;
                   font-weight: bold;
                   margin-top: unset;
-                  margin-bottom: 8px;
+                  margin-bottom: 6px;
                 }
-                .top-post-item {
-                  padding: 24px 0;
+                .post-item-outer {
+                  padding: 12px 0;
                 }
                 .top-post-item .description {
-                  margin: 0 6px;
+                  margin-left: 6px;
+                  margin-right: 0;
                 }
-                .top-post-item .description h4 {
-                  margin: 0;
-                  font-size: 13px;
-                  line-height: 16px;
-                  padding: 0;
-                  padding-bottom: 4px;
-                }
-                .top-post-item .description p {
-                  margin: 0;
+                .top-post-item .description .category {
+                  margin-bottom: 4px;
                   font-size: 12px;
+                  line-height: 14px;
+                }
+                .top-post-item .description .title {
+                  margin-bottom: 4px;
+                  font-size: 13px;
                   line-height: 15px;
+                  height: 45px;
+                  text-overflow: ellipsis;
+                }
+                .top-post-item .description .meta {
+                  font-size: 12px;
+                  line-height: 14px;
+                  margin: 0;
+                  color: #818181;
                 }
                 
                 /*** images */
@@ -588,21 +691,39 @@
                 .toc li {
                   font-size: 15px;
                 }
+                
+                /*** post items */
                 .post-items {
-                  width: 366px;
+                  width: 378px;
                   padding-left: 24px;
                 }
                 .post-items h3 {
                   font-size: 16px;
                   line-height: 17px;
                 }
-                .top-post-item .description h4 {
-                  font-size: 15px;
-                  padding-bottom: 6px;
+                .post-item-outer {
+                  padding: 12px 0;
                 }
-                .top-post-item .description p {
+                .top-post-item .description {
+                  margin-left: 6px;
+                }
+                .top-post-item .description .category {
+                  margin-bottom: 6px;
                   font-size: 14px;
+                  line-height: 15px;
+                }
+                .top-post-item .description .title {
+                  margin-bottom: 6px;
+                  font-size: 15px;
+                  line-height: 18px;
+                  height: 36px;
+                  text-overflow: ellipsis;
+                }
+                .top-post-item .description .meta {
+                  font-size: 13px;
                   line-height: 16px;
+                  margin: 0;
+                  color: #818181;
                 }
                 
                 /*** site footer */
@@ -847,7 +968,9 @@
                                                 <img src="https://www.mydoggyadvisor.com/assets/pictures/training/9-milestones-before-your-puppys-first-birthday/dog-first-birthday-800.jpg"
                                                 alt="A dog with sunglasses lying on a sunbed on the beach." />
                                             </picture>
-                                            <figcaption><span class="copyright">Photo by <a href="https://unsplash.com/@joshuachun">Joshua Chun</a> on <a href="https://unsplash.com/">Unsplash</a></span>
+                                            <figcaption>Photo by <a href="https://unsplash.com/@joshuachun">Joshua Chun</a> on
+                                                <a
+                                                href="https://unsplash.com/">Unsplash</a>
                                             </figcaption>
                                         </figure>
                                     </aside>
@@ -952,142 +1075,160 @@
                 </main>
                 <nav class="post-items">
                      <h3>Top posts</h3>
- <a href="https://www.mydoggyadvisor.com/grooming/how-to-cut-your-dogs-hair-for-summer/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">How to Cut Your Dog's Hair for Summer</h4>
-                <p>During summer many dog breeds can suffer overheating, as a responsible owner you can give it a summer summer cut. This guide will teach you how to do it.</p>
 
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/grooming/how-to-cut-your-dogs-hair-for-summer/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/grooming/how-to-cut-your-dogs-hair-for-summer/combing-small-dog-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">GROOMING</h3>
+                    <h4 class="title">How to Cut Your Dog's Hair for Summer</h4>
+                    <span class="meta">21 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/training/how-to-make-your-dog-comfortable-with-fireworks/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">How to Make Your Dog Comfortable with Fireworks</h4>
-                <p>Noise phobia is a real thing for dogs, either caused by fireworks or thunderstorms. Here are a few tips to make your dog more comfortable with strong noises.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/training/how-to-make-your-dog-comfortable-with-fireworks/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-make-your-dog-comfortable-with-fireworks/scared-dog-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TRAINING</h3>
+                    <h4 class="title">How to Make Your Dog Comfortable with Fireworks</h4>
+                    <span class="meta">61 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/training/10-ways-to-keep-your-puppy-cool-in-summer/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">10 Ways to Keep Your Puppy Cool in Summer</h4>
-                <p>Summer presents the perfect weather to head to the beach and enjoy outdoors with your puppy. This article offers few tips to make it safer for your dog.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/training/10-ways-to-keep-your-puppy-cool-in-summer/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/training/10-ways-to-keep-your-puppy-cool-in-summer/dog-with-sunglasses-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TRAINING</h3>
+                    <h4 class="title">10 Ways to Keep Your Puppy Cool in Summer</h4>
+                    <span class="meta">41 views - 4 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/training/how-to-socialize-dogs/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">How to Socialize Dogs</h4>
-                <p>The following guide will help you understand how to ensure that your dog – whether you have a young puppy or an adult dog – is socialized.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/training/how-to-socialize-dogs/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-socialize-dogs/dogs-playing-together-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TRAINING</h3>
+                    <h4 class="title">How to Socialize Dogs</h4>
+                    <span class="meta">113 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Best Interactive Dog Toys</h4>
-                <p>Interactive dog toys help dogs to enjoy being alone at home while, and at the same time great for their mental and cognitive development.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/toys/best-interactive-dog-toys/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/toys/best-interactive-dog-toys/robot-dog-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TOYS</h3>
+                    <h4 class="title">Best Interactive Dog Toys</h4>
+                    <span class="meta">249 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/feeding/best-dog-food/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Best Dog Food</h4>
-                <p>This simple dog food buying guide helps to understand how to choose the best food for your dog.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/feeding/best-dog-food/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/feeding/best-dog-food/a-dog-is-eating-some-bread-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">FEEDING</h3>
+                    <h4 class="title">Best Dog Food</h4>
+                    <span class="meta">387 views - 8 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">How to Leave Your Dog at Home Alone</h4>
-                <p>This short guide will help you learn how to leave your dog at home without having to worry about what you’ll find when you get back.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/training/how-to-leave-your-dog-at-home-alone/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/training/how-to-leave-your-dog-at-home-alone/dog-chewing-toys-indoor-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">TRAINING</h3>
+                    <h4 class="title">How to Leave Your Dog at Home Alone</h4>
+                    <span class="meta">77 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">How Much Chicken and Rice Should You Feed Your Sick Dog</h4>
-                <p>One of the most recommended ways to help sick dogs recover is to feed them a diet with chicken and rice.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/feeding/how-much-chicken-and-rice-should-you-feed-your-sick-dog/small-dog-covered-with-blanket-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">FEEDING</h3>
+                    <h4 class="title">How Much Chicken and Rice Should You Feed Your Sick Dog</h4>
+                    <span class="meta">212 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
- <a href="https://www.mydoggyadvisor.com/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/">
-        <div class="top-post-item">
-            <img class="thumbnail"
-                 alt=""
-                 srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-80x80.jpg,
-                         https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-160x160.jpg 2x"
-                 src="https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-80x80.jpg"
-            />
-            <div class="description">
-                <h4 class="title">Grain-Free Dog Food and Dilated Cardiomyopathy</h4>
-                <p>The FDA has been studying the effects of grain-free dog foods and their potential link to heart disease.</p>
+        </a>
 
+                    </div>
+                    <div class="post-item-outer"> <a href="https://www.mydoggyadvisor.com/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/">
+            <div class="top-post-item featured-post">
+                <img class="thumbnail"
+                     alt=""
+                     srcset="https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-80x80.jpg,
+                            https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-160x160.jpg 2x"
+                     src="https://www.mydoggyadvisor.com/assets/pictures/feeding/grain-free-dog-food-and-dilated-cardiomyopathy/dog-sleeping-on-the-floor-80x80.jpg"
+                />
+                <div class="description">
+                    <h3 class="category">FEEDING</h3>
+                    <h4 class="title">Grain-Free Dog Food and Dilated Cardiomyopathy</h4>
+                    <span class="meta">50 views - 5 min read</span>
+                </div>
             </div>
-        </div>
-    </a>
+        </a>
 
+                    </div>
                 </nav>
             </div>
             <aside class="site-footer-outer">
